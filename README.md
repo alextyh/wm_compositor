@@ -7,4 +7,5 @@ Has features like: Configuration file to define shortcut binds, and binds relate
 
 # Building
 dependencies: wayland-protocols, wayland-scanner, wlroots, wayland-server, xcb and xkbcommon, and other common building utilities
+
 invoke "make" using the Makefile and run the executable made (make clean cleans up the working directory)
