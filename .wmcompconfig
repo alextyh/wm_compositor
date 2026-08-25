@@ -1,0 +1,56 @@
+# THIS CONFIGURATION FILE IS SUPPOSED TO GO IN ~/.config/.wmcompconfig
+
+# primary monitor // monitor names are taken from 'ls /sys/class/drm/'
+# primary_monitor=DP-1
+
+# monitor configuration // example for multi-monitor support: DP-1 on the right, HDMI-A-1 on the left
+# monitor=DP-1:2560x1440@165:1280,0
+# monitor=HDMI-A-1:1280x1024@60:0,0
+
+# binds // used for invoking commands, examples below
+bind=ALT+Q=foot
+bind=ALT+space=rofi -show run
+
+# executes these at bootup // pretty self explanatory, examples below
+# exec=pipewire
+# exec=wireplumber
+# exec=pipewire-pulse
+
+# keybind configuration // these are the default binds for window behaviour
+bind=SUPER+Escape=action:quit
+bind=SUPER+C=action:close
+bind=ALT+Tab=action:cycle_window
+# omnipresence is just window persistence per workspace (yes this feature is inspired from wmmaker's)
+bind=SUPER+O=action:toggle_omnipresent
+
+# workspaces // default binds, workspace related binds from 1 to 10
+bind=SUPER+1=action:workspace_1
+bind=SUPER+2=action:workspace_2
+bind=SUPER+3=action:workspace_3
+bind=SUPER+4=action:workspace_4
+bind=SUPER+5=action:workspace_5
+bind=SUPER+6=action:workspace_6
+bind=SUPER+7=action:workspace_7
+bind=SUPER+8=action:workspace_8
+bind=SUPER+9=action:workspace_9
+bind=SUPER+0=action:workspace_10
+bind=SUPER+SHIFT+1=action:move_to_workspace_1
+bind=SUPER+SHIFT+2=action:move_to_workspace_2
+bind=SUPER+SHIFT+3=action:move_to_workspace_3
+bind=SUPER+SHIFT+4=action:move_to_workspace_4
+bind=SUPER+SHIFT+5=action:move_to_workspace_5
+bind=SUPER+SHIFT+6=action:move_to_workspace_6
+bind=SUPER+SHIFT+7=action:move_to_workspace_7
+bind=SUPER+SHIFT+8=action:move_to_workspace_8
+bind=SUPER+SHIFT+9=action:move_to_workspace_9
+bind=SUPER+SHIFT+0=action:move_to_workspace_10
+
+# border customization variables // decoration behaviour defaults
+border_width=3
+border_color_focused=4C99FF
+border_color_unfocused=4D4D4D
+
+# enviroment variables are set here // these are envs set, these should remain for proper behaviour
+env=BEMENU_BACKEND=wayland
+env=GDK_BACKEND=wayland
+env=XDG_SESSION_TYPE=wayland
