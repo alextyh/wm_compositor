@@ -2,7 +2,7 @@ PKG_CONFIG := pkg-config
 WAYLAND_PROTOCOLS := $(shell $(PKG_CONFIG) --variable=pkgdatadir wayland-protocols)
 WAYLAND_SCANNER := $(shell $(PKG_CONFIG) --variable=wayland_scanner wayland-scanner)
 
-CFLAGS += -O2 -flto -std=c11 -DWLR_USE_UNSTABLE -D_POSIX_C_SOURCE=200809L \
+CFLAGS += -O2 -flto -march=native -std=c11 -DWLR_USE_UNSTABLE -D_POSIX_C_SOURCE=200809L \
           $(shell $(PKG_CONFIG) --cflags wlroots-0.19 wayland-server xkbcommon xcb) \
           -I./include
 LIBS := $(shell $(PKG_CONFIG) --libs wlroots-0.19 wayland-server xkbcommon xcb)
