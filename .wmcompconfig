@@ -8,8 +8,8 @@
 # monitor=HDMI-A-1:1280x1024@60:0,0
 
 # binds // used for invoking commands, examples below
-bind=ALT+Q=foot
-bind=ALT+space=rofi -show run
+# bind=ALT+Q=foot
+# bind=ALT+space=rofi -show run
 
 # executes these at bootup // pretty self explanatory, examples below
 # exec=pipewire
